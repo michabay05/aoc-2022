@@ -1,7 +1,7 @@
 use crate::read_file;
 
 pub fn solution() {
-    let contents = read_file("input/day2.txt");
+    let contents = read_file("inputs/day2.txt");
     let split_words = contents.trim().split("\n");
 
     let mut total_score = 0;
