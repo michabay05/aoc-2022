@@ -22,7 +22,6 @@ fn solution_1() {
     let contents = contents.trim();
     // For every line of the input
     for el in contents.split('\n') {
-    // for el in SAMPLE_INPUT.split('\n') {
         // Find the midpoint of the current line
         let n = el.len() / 2;
         // Split the current line using the midpoint
@@ -67,7 +66,6 @@ fn solution_2() {
 
     let mut lines: [&str; 3] = [""; 3];
     for (ind, line) in contents.split("\n").enumerate() {
-    // for (ind, line) in SAMPLE_INPUT.split("\n").enumerate() {
         // If not the end of a group, write current line into array
         if (ind + 1) % 3 != 0 {
             lines[(ind + 1) % 3] = line;
